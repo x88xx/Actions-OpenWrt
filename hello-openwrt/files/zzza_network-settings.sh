@@ -17,7 +17,7 @@ config interface 'wan'
         option proto 'static'
         
         option ipaddr '149.104.8.192'
-        option gateway '149.104.8.129'
+        option gateway '149.104.8.254'
         option netmask '255.255.255.128'
         
         option ip6addr '::1/128'
