@@ -18,6 +18,6 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 sed -i 's/LEDE/OpenWRT/g' package/base-files/files/bin/config_generate
 #
 # 有些时候差python环境
-sudo apt-get update && sudo apt-get install python3-venv
+# sudo apt-get update && sudo apt-get install python3-venv
 #
 # 
