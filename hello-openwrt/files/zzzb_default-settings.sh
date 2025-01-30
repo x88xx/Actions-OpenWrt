@@ -49,7 +49,7 @@ create_swap() {
     # 如果swap文件不存在，则创建它
     if [ ! -f "$swap_file" ]; then
         dd if=/dev/zero of="$swap_file" bs=1M count=128
-        chmod 600 "$swap_file"
+        chmod 0755 "$swap_file"
         mkswap "$swap_file"
     fi
 
