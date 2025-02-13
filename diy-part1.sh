@@ -6,7 +6,7 @@
 # sed -i 's/%D %V, %C/%D %V, '$date' By Dream./g' package/base-files/files/etc/banner
 #
 # 修改luci显示cpu型号方式
-sed -i 's/pcdata(boardinfo.model/pcdata(boardinfo.system/g' package/lean/autocore/files/x86/index.htm
+# sed -i 's/pcdata(boardinfo.model/pcdata(boardinfo.system/g' package/lean/autocore/files/x86/index.htm
 #
 # 修改内核版本（版本内核默认6.1，版本修改为:5.4）
 # sed -i 's/KERNEL_PATCHVER:=\([0-9]\+\.[0-9]\+\)/KERNEL_PATCHVER:=5.4/g' target/linux/x86/Makefile
