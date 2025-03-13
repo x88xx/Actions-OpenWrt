@@ -73,7 +73,7 @@ set_disk
 create_swap
 
 # 修正终端不显示错误
-/etc/init.d/ttyd restart
+# /etc/init.d/ttyd restart
 
 
 
