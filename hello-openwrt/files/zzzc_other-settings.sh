@@ -1,19 +1,19 @@
 #!/bin/sh
 
-# ÉèÖÃÏµÍ³Ãû
+# è®¾ç½®ç³»ç»Ÿå
 uci set system.@system[0].hostname='OpenWRT'
-uci set system.@system[-1].hostname='OpenWRT'
-set system.@system[0].hostname='OpenWRT'
-set system.@system[-1].hostname='OpenWRT'
+# uci set system.@system[-1].hostname='OpenWRT'
+# set system.@system[0].hostname='OpenWRT'
+# set system.@system[-1].hostname='OpenWRT'
 
-# ĞŞ¸ÄÄ¬ÈÏÖ÷Ìâ
+# ä¿®æ”¹é»˜è®¤ä¸»é¢˜
 sed -i "s|option mediaurlbase '/luci-static/bootstrap'|option mediaurlbase '/luci-static/bootstrap-light'|g" /etc/config/luci
 
 
-# É¾³ıÎŞÓÃÎÄ¼ş
+# åˆ é™¤æ— ç”¨æ–‡ä»¶
 rm -rf /root/*
 
-# ÖØÆôÒ»±é
+# é‡å¯ä¸€é
 reboot
 
 exit 0
