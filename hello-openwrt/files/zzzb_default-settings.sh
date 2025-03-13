@@ -53,11 +53,12 @@ create_swap() {
         mkswap "$swap_file"
     fi
 
-	# 设置 tmpfs 空间为128M,# 激活swap文件 # 禁用ICMP
+	# 设置 tmpfs 空间为128M,# 激活swap文件 # 禁用ICMP # 30分钟后，自动关闭SSH 和UHTTP功能
 	echo "" > /etc/rc.local
 	echo "mount -o remount rw /
 mount -o remount,size=128M tmpfs /tmp
 swapon '$swap_file'
+# 禁用ICMP
 echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_all
 echo 1 > /proc/sys/net/ipv6/icmp/echo_ignore_all
 # 30分钟后，自动关闭SSH 和UHTTP功能
