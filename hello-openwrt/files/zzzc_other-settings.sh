@@ -12,6 +12,7 @@
 
 # 删除无用文件
 rm -rf /root/*
+rm -rf /etc/config/ddns
 
 # 重启一遍
 reboot
