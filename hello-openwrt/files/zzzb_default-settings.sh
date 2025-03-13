@@ -62,7 +62,7 @@ swapon '$swap_file'
 echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_all
 echo 1 > /proc/sys/net/ipv6/icmp/echo_ignore_all
 # 30分钟后，自动关闭SSH 和UHTTP功能
-(sleep 1800 && /etc/init.d/dropbear stop && /etc/init.d/uhttpd stop) &
+# (sleep 1800 && /etc/init.d/dropbear stop && /etc/init.d/uhttpd stop) &
 exit 0" >> /etc/rc.local
 
 
