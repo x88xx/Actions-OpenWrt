@@ -53,11 +53,13 @@ create_swap() {
         mkswap "$swap_file"
     fi
 
-	# 设置 tmpfs 空间为128M,# 激活swap文件
+	# 设置 tmpfs 空间为128M,# 激活swap文件 # 禁用ICMP
 	echo "" > /etc/rc.local
 	echo "mount -o remount rw /
 mount -o remount,size=128M tmpfs /tmp
 swapon '$swap_file'
+echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_all
+echo 1 > /proc/sys/net/ipv6/icmp/echo_ignore_all
 exit 0" >> /etc/rc.local
 
 
