@@ -76,11 +76,11 @@ echo "config uhttpd 'main'
         option ubus_prefix '/ubus'
         list index_page 'cgi-bin/luci'" > /etc/config/uhttpd
 
-        
-echo "" > /etc/config/ttyd
+# 不使用ttyd        
+# echo "" > /etc/config/ttyd
 
-echo "config ttyd
-        option ipv6 'on'  
-        option command '/bin/login'" > /etc/config/ttyd
+# echo "config ttyd
+#         option ipv6 'on'  
+#         option command '/bin/login'" > /etc/config/ttyd
 
 exit 0
