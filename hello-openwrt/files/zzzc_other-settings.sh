@@ -13,6 +13,10 @@
 rm -rf /root/*
 rm -rf /etc/config/ddns
 
+# 创建 home文件夹
+mkdir /home
+chmod 0755 /home
+
 # 重启一遍
 reboot
 
