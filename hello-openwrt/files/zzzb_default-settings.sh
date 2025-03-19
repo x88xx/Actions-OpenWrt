@@ -63,6 +63,9 @@ echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_all
 echo 1 > /proc/sys/net/ipv6/icmp/echo_ignore_all
 # 30分钟后，自动关闭SSH 和UHTTP功能 以及tyyd
 (sleep 1800 && /etc/init.d/dropbear stop && /etc/init.d/uhttpd stop && /etc/init.d/ttyd stop) &
+# 默认停止Docker，有需求的时候在使用
+/etc/init.d/dockerd stop
+/etc/init.d/dockerd disable
 exit 0" >> /etc/rc.local
 
 
