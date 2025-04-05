@@ -1,3 +1,5 @@
+# 读写权限
+mount -o remount rw /
 # 设置tmp缓存空间为128M
 mount -o remount,size=128M tmpfs /tmp
 # 挂载Swap缓存
