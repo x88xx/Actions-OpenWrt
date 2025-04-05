@@ -75,9 +75,9 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        [ -e $DIY_PACKAGE] && mv $DIY_PACKAGE openwrt/package/
-        # chmod -R 0755 openwrt/package/$DIY_PACKAGE
+        mv $DIY_PACKAGE openwrt/package/
         ls -lh openwrt/package/
+        chmod -R 0755 openwrt/package/$DIY_PACKAGE/
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
