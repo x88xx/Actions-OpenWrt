@@ -13,7 +13,7 @@ mv -f /root/config/rc.local /etc/rc.local && chmod 0644 /etc/rc.local
 mv -f /root/config/shadow /etc/shadow && chmod 0644 /etc/shadow
 
 # 设置Shell终端显示
-mv -f /root/config/shadow /etc/banner && chmod 0644 /etc/banner
+mv -f /root/config/banner /etc/banner && chmod 0644 /etc/banner
 
 # 覆盖配置信息
 cp -rf /root/config/* /etc/config
