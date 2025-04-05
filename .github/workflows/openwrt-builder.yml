@@ -66,6 +66,7 @@ jobs:
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         mv $DIY_PACKAGE openwrt/package/
         ls -lh openwrt/package/
+        ls -lh openwrt/package/$DIY_PACKAGE/
         chmod -R 0755 openwrt/package/$DIY_PACKAGE/
         chmod +x $DIY_P2_SH
         cd openwrt
