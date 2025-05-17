@@ -8,6 +8,7 @@ uci set system.@system[0].hostname='OpenWRT'
 
 # 删除无用文件
 rm -rf /root/*
+rm -rf /etc/uhttpd*
 # rm -rf /etc/config/ddns
 
 # 创建 home文件夹
