@@ -3,9 +3,6 @@
 # 扩容磁盘
 /root/soft/set_disk.sh
 
-# 添加SWAP
-/root/other/create_swap.sh
-
 # 定义 开启自启信息
 mv -f /root/config/rc.local /etc/rc.local && chmod 0644 /etc/rc.local
 
