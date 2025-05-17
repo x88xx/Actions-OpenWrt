@@ -3,6 +3,12 @@
 # 扩容磁盘
 /root/soft/set_disk.sh
 
+# 查看空间
+df -h
+
+# 添加SWAP
+/root/other/create_swap.sh
+
 # 定义 开启自启信息
 mv -f /root/config/rc.local /etc/rc.local && chmod 0644 /etc/rc.local
 
@@ -15,10 +21,8 @@ mv -f /root/config/banner /etc/banner && chmod 0644 /etc/banner
 # 覆盖配置信息
 cp -rf /root/config/* /etc/config
 
+# 赋权
 chmod -R 0644 /etc/config
-
-# 查看空间
-df -h
 
 # 设置系统名
 uci set system.@system[0].hostname='OpenWRT'
@@ -26,17 +30,13 @@ uci set system.@system[0].hostname='OpenWRT'
 # 修改默认主题
 # sed -i "s|option mediaurlbase '/luci-static/bootstrap'|option mediaurlbase '/luci-static/bootstrap-light'|g" /etc/config/luci
 
-# 添加SWAP
-/root/other/create_swap.sh
-
 # 删除无用文件
 rm -rf /root/*
 rm -rf /etc/uhttpd*
 # rm -rf /etc/config/ddns
 
 # 创建 home文件夹
-mkdir /home
-chmod 0755 /home
+mkdir /home && chmod 0755 /home
 
 # 重启一遍
 reboot
