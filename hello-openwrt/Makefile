@@ -76,18 +76,13 @@ define Package/$(PKG_NAME)/install
 	$(INSTALL_DIR) $(1)/root/soft/
 	$(INSTALL_BIN) ./soft/* $(1)/root/soft/
 
-	# 其它文件
-	$(INSTALL_DIR) $(1)/root/other/
-	$(INSTALL_BIN) ./other/* $(1)/root/other/
-
 	# 配置文件
 	$(INSTALL_DIR) $(1)/root/config
 	$(INSTALL_BIN) ./config/* $(1)/root/config/
 	
-
 	# 默认设置
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_BIN) ./install/zz-default-settings.sh $(1)/etc/uci-defaults/zz-default-settings.sh
+	$(INSTALL_BIN) ./install/setting.sh $(1)/etc/uci-defaults/zzzz-default-settings.sh
 
 endef
 
