@@ -2,11 +2,11 @@
 
 create_swap() {
 
+    # 设置 128M 缓存
+    local swap_size=128
+    
     # 创建路径
     local swap_file="/www/swapfile"
-
-    # 128M
-    local swap_size=128
 
     # 确保/www目录存在
     mkdir -p /www
