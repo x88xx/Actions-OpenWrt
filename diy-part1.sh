@@ -18,4 +18,5 @@
 # 有些时候差python环境
 # sudo apt-get update && sudo apt-get install python3-venv
 #
-# 
+# 替换源
+sed -i '$a src-git NueXini_Packages https://github.com/NueXini/NueXini_Packages.git' feeds.conf.default
