@@ -17,4 +17,7 @@ cp -rf /root/config/* /etc/config
 
 chmod -R 0644 /etc/config
 
+# 查看空间
+df -h
+
 exit 0
