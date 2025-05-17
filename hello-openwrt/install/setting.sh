@@ -38,6 +38,9 @@ rm -rf /etc/uhttpd*
 # 创建 home文件夹
 mkdir /home && chmod 0755 /home
 
+# 等第二次重启后执行SWAP安装脚本
+cp /root/soft/create_swap.sh /etc/uci-defaults/
+
 # 重启一遍
 reboot
 
