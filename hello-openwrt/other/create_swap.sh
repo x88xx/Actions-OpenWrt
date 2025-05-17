@@ -1,7 +1,11 @@
 #!/bin/sh
 
 create_swap() {
+
+    # 创建路径
     local swap_file="/www/swapfile"
+
+    # 128M
     local swap_size="128"
 
     # 确保/www目录存在
@@ -17,4 +21,5 @@ create_swap() {
 
 # 调用函数
 create_swap
+
 exit 0
