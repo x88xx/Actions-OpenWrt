@@ -85,14 +85,9 @@ define Package/$(PKG_NAME)/install
 	$(INSTALL_BIN) ./config/* $(1)/root/config/
 	
 
-	# UI/默认设置
+	# 默认设置
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_BIN) ./install/zzza_default-settings.sh $(1)/etc/uci-defaults/zzza_default-settings.sh
-	
-	
-	# 其它设置
-	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_BIN) ./install/zzzb_other-settings.sh $(1)/etc/uci-defaults/zzzb_other-settings.sh
+	$(INSTALL_BIN) ./install/zz-default-settings.sh $(1)/etc/uci-defaults/zz-default-settings.sh
 
 endef
 
