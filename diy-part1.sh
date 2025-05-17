@@ -20,5 +20,3 @@
 #
 # 替换源
 sed -i '$a src-git NueXini_Packages https://github.com/NueXini/NueXini_Packages.git' feeds.conf.default
-cp /usr/bin/upx staging_dir/host/bin
-cp /usr/bin/upx-ucl staging_dir/host/bin
