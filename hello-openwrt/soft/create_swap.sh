@@ -22,4 +22,8 @@ create_swap() {
 # 调用函数
 create_swap
 
+# 重启
+
+reboot
+
 exit 0
