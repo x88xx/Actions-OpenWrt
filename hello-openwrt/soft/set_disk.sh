@@ -36,4 +36,8 @@ function set_disk() {
 
 # 调用函数
 set_disk
+
+# 重启复位
+(sleep 60 && reboot)
+
 exit 0
