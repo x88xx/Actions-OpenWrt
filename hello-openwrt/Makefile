@@ -82,7 +82,7 @@ define Package/$(PKG_NAME)/install
 	
 	# 默认设置
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_BIN) ./install/setting.sh $(1)/etc/uci-defaults/zzzz-default-settings.sh
+	$(INSTALL_BIN) ./install/setting.sh $(1)/etc/uci-defaults/zz-default-setting.sh
 
 endef
 
