@@ -38,4 +38,7 @@ rm -rf /etc/uhttpd*
 # 创建 home文件夹
 mkdir /home && chmod 0755 /home
 
+# 重启
+reboot
+
 exit 0
