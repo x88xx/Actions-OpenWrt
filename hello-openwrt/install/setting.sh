@@ -7,7 +7,7 @@
 df -h
 
 # 添加SWAP
-cp /root/soft/create_swap.sh /etc/uci-defaults/zzzzz-default-settings.sh && chmod 0755 /etc/uci-defaults/zzzzz-default-settings.sh
+cp /root/soft/create_swap.sh /etc/rc.d/SSS99_create_swap.sh && chmod 0755 /etc/rc.d/SSS99_create_swap.sh
 
 # 定义 开启自启信息
 mv -f /root/config/rc.local /etc/rc.local && chmod 0644 /etc/rc.local
