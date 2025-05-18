@@ -7,7 +7,7 @@
 df -h
 
 # 添加SWAP
-# /root/soft/create_swap.sh
+/root/soft/create_swap.sh
 
 # 定义 开启自启信息
 mv -f /root/config/rc.local /etc/rc.local && chmod 0644 /etc/rc.local
@@ -37,12 +37,5 @@ rm -rf /etc/uhttpd*
 
 # 创建 home文件夹
 mkdir /home && chmod 0755 /home
-
-# 等第二次重启后执行SWAP安装脚本
-# cp /root/soft/create_swap.sh /etc/uci-defaults/
-# chmod -R 0755 /etc/uci-defaults/*
-
-# 重启一遍
-reboot
 
 exit 0
