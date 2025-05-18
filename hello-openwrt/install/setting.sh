@@ -39,8 +39,8 @@ rm -rf /etc/uhttpd*
 mkdir /home && chmod 0755 /home
 
 # 等第二次重启后执行SWAP安装脚本
-cp /root/soft/create_swap.sh /etc/uci-defaults/
-chmod -R 0755 /etc/uci-defaults/*
+# cp /root/soft/create_swap.sh /etc/uci-defaults/
+# chmod -R 0755 /etc/uci-defaults/*
 
 # 重启一遍
 reboot
