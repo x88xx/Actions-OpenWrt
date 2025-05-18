@@ -16,12 +16,14 @@ create_swap() {
         dd if=/dev/zero of="$swap_file" bs=1M count=$swap_size
         chmod 0755 "$swap_file"
         mkswap "$swap_file"
+        swapon "$swap_file"
     else
         swapoff "$swap_file"
         rm -rf "$swap_file"
         dd if=/dev/zero of="$swap_file" bs=1M count=$swap_size
         chmod 0755 "$swap_file"
         mkswap "$swap_file"
+        swapon "$swap_file"
     fi
 }
 
