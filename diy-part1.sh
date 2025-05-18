@@ -8,7 +8,7 @@
 # 修改luci显示cpu型号方式
 # sed -i 's/pcdata(boardinfo.model/pcdata(boardinfo.system/g' package/lean/autocore/files/x86/index.htm
 #
-# 修改内核版本（版本内核默认6.1，版本修改为:5.4）
+# 修改内核版本,版本修改为:5.4
 sed -i 's/KERNEL_PATCHVER:=\([0-9]\+\.[0-9]\+\)/KERNEL_PATCHVER:=5.4/g' target/linux/x86/Makefile
 #
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
