@@ -38,6 +38,6 @@ function set_disk() {
 set_disk
 
 # 重启复位
-(sleep 60 && reboot)
+(sleep 60 && reboot) && echo "Restart in 60 seconds."
 
 exit 0
