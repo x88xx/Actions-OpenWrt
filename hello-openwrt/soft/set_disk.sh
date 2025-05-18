@@ -37,7 +37,4 @@ function set_disk() {
 # 调用函数
 set_disk
 
-# 重启复位
-(sleep 60 && reboot) && echo "Restart in 60 seconds."
-
 exit 0
