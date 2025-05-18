@@ -6,7 +6,7 @@ create_swap() {
     local swap_size=128
     
     # 创建路径
-    local swap_file="/www/swapfile"
+    local swap_file="/etc/swapfile"
 
     # 确保/www目录存在
     mkdir -p /www
@@ -27,7 +27,6 @@ create_swap() {
 
 # 调用函数
 create_swap
-sed -i "s|# swapon '/www/swapfile'|swapon '/www/swapfile'|" /etc/rc.local
 
 # 重启
 # reboot
