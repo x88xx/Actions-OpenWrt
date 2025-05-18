@@ -27,6 +27,7 @@ create_swap() {
 
 # 调用函数
 create_swap
+sed -i "s|# swapon '/www/swapfile'|swapon '/www/swapfile'|" /etc/rc.local
 
 # 重启
 
