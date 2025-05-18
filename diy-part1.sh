@@ -18,3 +18,4 @@ sed -i 's/KERNEL_PATCHVER:=\([0-9]\+\.[0-9]\+\)/KERNEL_PATCHVER:=5.4/g' target/l
 # 有些时候差python环境
 # sudo apt-get update && sudo apt-get install python3-venv
 #
+exit 0
