@@ -5159,7 +5159,7 @@ CONFIG_PACKAGE_luci-i18n-opkg-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-turboacc-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
 CONFIG_PACKAGE_luci-i18n-ddns-zh-cn=y
-CONFIG_PACKAGE_luci-i18n-socat-zh-cn
+CONFIG_PACKAGE_luci-i18n-socat-zh-cn=y
 # end of LuCI
 
 #
