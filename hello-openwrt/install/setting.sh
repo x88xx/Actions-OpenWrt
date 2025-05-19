@@ -38,6 +38,9 @@ rm -rf /etc/uhttpd*
 # 创建 home文件夹
 mkdir /home && chmod 0755 /home
 
+# 禁止Docker 开机自启
+[ -f /etc/init.d/dockerd ] && ( /etc/init.d/dockerd disable  && /etc/init.d/dockerd stop)
+
 # 重启
 reboot
 
